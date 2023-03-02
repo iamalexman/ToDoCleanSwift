@@ -11,7 +11,3 @@ protocol ToDoListBusinessLogicInput: AnyObject {
 	func viewIsReady()
 	func didTaskSelected(at indexPath: IndexPath)
 }
-
-protocol ToDoListDataStore {
-	//var name: String { get set }
-}

@@ -7,32 +7,13 @@
 
 import UIKit
 
-//protocol LoginDataPassing {
-//	var dataStore: LoginDataStore? { get }
-//}
-
 final class LoginRouter {
 	weak var viewController: LoginViewController?
 	private let sceneFactory: SceneFactory
-//	var dataStore: LoginDataStore?
 	
 	init(sceneFactory: SceneFactory) {
 		self.sceneFactory = sceneFactory
 	}
-	
-	// MARK: Routing
-	
-	// MARK: Navigation
-	
-	//func navigateToSomewhere(source: LoginViewController, destination: SomewhereViewController) {
-	//  source.show(destination, sender: nil)
-	//}
-	
-	// MARK: Passing data
-	
-	//func passDataToSomewhere(source: LoginDataStore, destination: inout SomewhereDataStore) {
-	//  destination.name = source.name
-	//}
 }
 
 // MARK: Routing Logic

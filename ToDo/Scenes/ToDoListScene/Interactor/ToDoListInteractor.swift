@@ -7,10 +7,9 @@
 
 import UIKit
 
-final class ToDoListInteractor: ToDoListBusinessLogicInput, ToDoListDataStore {
+final class ToDoListInteractor: ToDoListBusinessLogicInput {
 	private var sectionManager: ITaskManagerSectionsAdapter!
 	var presenter: ToDoListPresentationLogic?
-	private var worker: ToDoListSceneWorker?
 	
 	init(presenter: ToDoListPresentationLogic?,
 		 sectionManager: ITaskManagerSectionsAdapter!) {

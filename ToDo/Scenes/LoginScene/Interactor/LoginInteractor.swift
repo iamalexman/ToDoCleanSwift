@@ -7,11 +7,6 @@
 
 import UIKit
 
-//protocol LoginDataStore {
-//	var email: String? { get set }
-//	var password: String? { get set }
-//}
-
 class LoginInteractor {
 	var presenter: ILoginPresentationLogic?
 	var worker: LoginWorker?
