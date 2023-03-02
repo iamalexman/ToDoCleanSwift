@@ -5,6 +5,6 @@
 //  Created by Alex Smith on 03.03.2023.
 //
 
-protocol ToDoScreenConfigurator {
+protocol IToDoScreenConfigurator {
 	func configured(_ viewController: ToDoListViewController) -> ToDoListViewController
 }

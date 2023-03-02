@@ -7,11 +7,11 @@
 
 import UIKit
 
-final class ToDoListInteractor: ToDoListBusinessLogicInput {
+final class ToDoListInteractor: IToDoListBusinessLogicInput {
 	private var sectionManager: ITaskManagerSectionsAdapter!
-	var presenter: ToDoListPresentationLogic?
+	var presenter: IToDoListPresentationLogic?
 	
-	init(presenter: ToDoListPresentationLogic?,
+	init(presenter: IToDoListPresentationLogic?,
 		 sectionManager: ITaskManagerSectionsAdapter!) {
 		
 		self.presenter = presenter

@@ -6,7 +6,7 @@
 //
 
 class LoginPresenter: ILoginPresentationLogic {
-	weak var viewController: LoginDisplayLogicInput?
+	weak var viewController: ILoginDisplayLogicInput?
 	
 	// MARK: Presentation
 	

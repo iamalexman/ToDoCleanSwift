@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ToDoListBusinessLogicInput: AnyObject {
+protocol IToDoListBusinessLogicInput: AnyObject {
 	func viewIsReady()
 	func didTaskSelected(at indexPath: IndexPath)
 }

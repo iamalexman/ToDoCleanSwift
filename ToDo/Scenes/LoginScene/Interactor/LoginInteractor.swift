@@ -21,7 +21,7 @@ class LoginInteractor {
 
 // MARK: Interactor Input protocol
 
-extension LoginInteractor: LoginBusinessLogicInput {
+extension LoginInteractor: ILoginBusinessLogicInput {
 	func tryToLogin(request: LoginModels.Request) {
 		let result = worker?.login(login: request.login,
 								   password: request.password)

@@ -18,7 +18,7 @@ final class LoginRouter {
 
 // MARK: Routing Logic
 
-extension LoginRouter: LoginRoutingLogic {
+extension LoginRouter: ILoginRoutingLogic {
 	func showLoginSuccess() {
 		let scene = sceneFactory.makeToDoScene()
 		viewController?.navigationController?.pushViewController(scene, animated: true)

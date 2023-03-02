@@ -8,8 +8,8 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-	var interactor: LoginBusinessLogicInput?
-	var router: LoginRoutingLogic?
+	var interactor: ILoginBusinessLogicInput?
+	var router: ILoginRoutingLogic?
 	
 	// MARK: Outlets
 	
@@ -90,7 +90,7 @@ class LoginViewController: UIViewController {
 
 // MARK: Input protocol
 
-extension LoginViewController: LoginDisplayLogicInput {
+extension LoginViewController: ILoginDisplayLogicInput {
 	func render(viewModel: LoginModels.ViewModel) {
 		viewModel.success ? router?.showLoginSuccess() :
 		router?.showLoginFailure(message: "Try another password please")
