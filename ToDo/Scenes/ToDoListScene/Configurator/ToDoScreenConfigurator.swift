@@ -21,12 +21,9 @@ final class DefaultToDoSceneConfigurator: ToDoScreenConfigurator {
 		taskManager.addTasks(tasks: repository.getTasks())
 		let presenter = ToDoListPresenter()
 		let interactor = ToDoListInteractor(presenter: presenter, sectionManager: TaskManagerSectionsAdapter(taskManager: taskManager))
-		let router = ToDoListRouter() //sceneFactory: sceneFactory)
-		router.viewController = viewController
 		presenter.viewController = viewController
 		interactor.presenter = presenter
 		viewController.interactor = interactor
-		viewController.router = router
 		return viewController
 	}
 }

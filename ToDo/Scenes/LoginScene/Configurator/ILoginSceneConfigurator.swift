@@ -14,10 +14,6 @@ final class DefaultLoginSceneConfigurator: ILoginSceneConfigurator {
 	
 	func configured(_ viewController: LoginViewController) -> LoginViewController {
 		sceneFactory.loginSceneconfigurator = self
-//		let service = DefaultAuthService(
-//			networkManager: DefaultNetworkManager(session: MockNetworkSession())
-//		)
-//		let authWorker = LoginSceneAuthWorker(service: service)
 		let presenter = LoginPresenter()
 		let worker = LoginWorker()
 		let interactor = LoginInteractor(presenter: presenter, worker: worker)
@@ -25,7 +21,6 @@ final class DefaultLoginSceneConfigurator: ILoginSceneConfigurator {
 		router.viewController = viewController
 		presenter.viewController = viewController
 		interactor.presenter = presenter
-//		interactor.authWorker = authWorker
 		viewController.interactor = interactor
 		viewController.router = router
 		return viewController

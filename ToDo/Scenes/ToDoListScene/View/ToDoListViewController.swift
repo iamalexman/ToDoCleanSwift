@@ -10,7 +10,6 @@ import UIKit
 final class ToDoListViewController: UITableViewController {
 	private var viewModel: ToDoList.ViewModel = ToDoList.ViewModel(tasksBySections: [])
 	var interactor: ToDoListBusinessLogicInput?
-	var router: ToDoListRoutingLogic?
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -19,7 +18,8 @@ final class ToDoListViewController: UITableViewController {
 		interactor?.viewIsReady()
 	}
 	
-	// MARK: - Table view data source
+	// MARK: - Table view datasource and delegate
+	
 	override func numberOfSections(in tableView: UITableView) -> Int {
 		viewModel.tasksBySections.count
 	}
