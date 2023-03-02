@@ -9,7 +9,7 @@ import UIKit
 
 final class ToDoListViewController: UITableViewController {
 	private var viewModel: ToDoList.ViewModel = ToDoList.ViewModel(tasksBySections: [])
-	var interactor: ToDoListBusinessLogicInput?
+	var interactor: IToDoListBusinessLogicInput?
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -68,7 +68,7 @@ final class ToDoListViewController: UITableViewController {
 
 // MARK: Input protocol
 
-extension ToDoListViewController: ToDoListDisplayLogicInput {
+extension ToDoListViewController: IToDoListDisplayLogicInput {
 	func render(viewModel: ToDoList.ViewModel) {
 		self.viewModel = viewModel
 		tableView.reloadData()

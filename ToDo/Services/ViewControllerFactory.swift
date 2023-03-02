@@ -11,13 +11,13 @@ protocol SceneFactory {
 	var loginSceneconfigurator: ILoginSceneConfigurator! { get set }
 	func makeLoginScene() -> UIViewController
 	
-	var toDoSceneConfigurator: ToDoScreenConfigurator! { get set }
+	var toDoSceneConfigurator: IToDoScreenConfigurator! { get set }
 	func makeToDoScene() -> UIViewController
 }
 
 final class DefaultSceneFactory: SceneFactory {
 	var loginSceneconfigurator: ILoginSceneConfigurator!
-	var toDoSceneConfigurator: ToDoScreenConfigurator!
+	var toDoSceneConfigurator: IToDoScreenConfigurator!
 	
 	func makeLoginScene() -> UIViewController {
 		let viewController = LoginViewController()

@@ -7,13 +7,13 @@
 
 import Foundation
 
-typealias LoginInteractorInput = LoginViewControllerOutput
+typealias ILoginInteractorInput = ILoginViewControllerOutput
 
-protocol LoginBusinessLogicInput {
+protocol ILoginBusinessLogicInput {
 	func tryToLogin(request: LoginModels.Request)
 }
 
-protocol LoginInteractorOutput: AnyObject {
+protocol ILoginInteractorOutput: AnyObject {
 	func showLoginSuccess()
 	func showLoginFailure(message: String)
 }

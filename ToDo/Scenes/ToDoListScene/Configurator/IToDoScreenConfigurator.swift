@@ -1,5 +1,5 @@
 //
-//  ToDoScreenConfigurator.swift
+//  IToDoScreenConfigurator.swift
 //  ToDo
 //
 //  Created by Alex Smith on 26.02.2023.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class DefaultToDoSceneConfigurator: ToDoScreenConfigurator {
+final class DefaultToDoSceneConfigurator: IToDoScreenConfigurator {
 	private var sceneFactory: SceneFactory
 	
 	init(sceneFactory: SceneFactory) {

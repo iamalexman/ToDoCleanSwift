@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5E42524229AAA427007CFD68 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E42524129AAA427007CFD68 /* ViewControllerFactory.swift */; };
-		5E42524429AAA48F007CFD68 /* ILoginSceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E42524329AAA48F007CFD68 /* ILoginSceneConfigurator.swift */; };
-		5E42524629AB6143007CFD68 /* ToDoScreenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E42524529AB6143007CFD68 /* ToDoScreenConfigurator.swift */; };
+		5E42524429AAA48F007CFD68 /* LoginSceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E42524329AAA48F007CFD68 /* LoginSceneConfigurator.swift */; };
+		5E42524629AB6143007CFD68 /* IToDoScreenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E42524529AB6143007CFD68 /* IToDoScreenConfigurator.swift */; };
 		5E42527129AB6F01007CFD68 /* ToDoListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E42526B29AB6F01007CFD68 /* ToDoListPresenter.swift */; };
 		5E42527429AB6F01007CFD68 /* ToDoListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E42526E29AB6F01007CFD68 /* ToDoListModels.swift */; };
 		5E42527529AB6F01007CFD68 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E42526F29AB6F01007CFD68 /* ToDoListViewController.swift */; };
@@ -45,8 +45,8 @@
 
 /* Begin PBXFileReference section */
 		5E42524129AAA427007CFD68 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
-		5E42524329AAA48F007CFD68 /* ILoginSceneConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILoginSceneConfigurator.swift; sourceTree = "<group>"; };
-		5E42524529AB6143007CFD68 /* ToDoScreenConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoScreenConfigurator.swift; sourceTree = "<group>"; };
+		5E42524329AAA48F007CFD68 /* LoginSceneConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneConfigurator.swift; sourceTree = "<group>"; };
+		5E42524529AB6143007CFD68 /* IToDoScreenConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IToDoScreenConfigurator.swift; sourceTree = "<group>"; };
 		5E42526B29AB6F01007CFD68 /* ToDoListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListPresenter.swift; sourceTree = "<group>"; };
 		5E42526E29AB6F01007CFD68 /* ToDoListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListModels.swift; sourceTree = "<group>"; };
 		5E42526F29AB6F01007CFD68 /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 		5E42527D29B15E36007CFD68 /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
-				5E42524329AAA48F007CFD68 /* ILoginSceneConfigurator.swift */,
+				5E42524329AAA48F007CFD68 /* LoginSceneConfigurator.swift */,
 				5E42527E29B15E4D007CFD68 /* LoginSceneConfiguratorProtocols.swift */,
 			);
 			path = Configurator;
@@ -158,7 +158,7 @@
 		5E42528A29B15F99007CFD68 /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
-				5E42524529AB6143007CFD68 /* ToDoScreenConfigurator.swift */,
+				5E42524529AB6143007CFD68 /* IToDoScreenConfigurator.swift */,
 				5E42528B29B15FB7007CFD68 /* ToDoScreenConfiguratorProtocols.swift */,
 			);
 			path = Configurator;
@@ -378,7 +378,7 @@
 				5E42527129AB6F01007CFD68 /* ToDoListPresenter.swift in Sources */,
 				5E42528C29B15FB7007CFD68 /* ToDoScreenConfiguratorProtocols.swift in Sources */,
 				5E42528629B15F2F007CFD68 /* LoginViewControllerProtocols.swift in Sources */,
-				5E42524629AB6143007CFD68 /* ToDoScreenConfigurator.swift in Sources */,
+				5E42524629AB6143007CFD68 /* IToDoScreenConfigurator.swift in Sources */,
 				5E42529829B16118007CFD68 /* ToDoListViewControllerProtocols.swift in Sources */,
 				5E74746D29AA9C41008EF4A3 /* LoginInteractor.swift in Sources */,
 				5E74746829AA9C41008EF4A3 /* LoginPresenter.swift in Sources */,
@@ -398,7 +398,7 @@
 				5E9D08D62997C79100F7B64A /* SceneDelegate.swift in Sources */,
 				5EF03A15299BD5290078F8B3 /* Repository.swift in Sources */,
 				5E74746C29AA9C41008EF4A3 /* LoginViewController.swift in Sources */,
-				5E42524429AAA48F007CFD68 /* ILoginSceneConfigurator.swift in Sources */,
+				5E42524429AAA48F007CFD68 /* LoginSceneConfigurator.swift in Sources */,
 				5E42528F29B16004007CFD68 /* ToDoListPresenterProtocols.swift in Sources */,
 				5E42527429AB6F01007CFD68 /* ToDoListModels.swift in Sources */,
 				5E42528229B15E96007CFD68 /* LoginPresenterProtocols.swift in Sources */,

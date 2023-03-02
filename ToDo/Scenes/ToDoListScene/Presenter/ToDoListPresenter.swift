@@ -7,8 +7,8 @@
 
 import UIKit
 
-class ToDoListPresenter: ToDoListPresentationLogic {
-	weak var viewController: ToDoListDisplayLogicInput?
+class ToDoListPresenter: IToDoListPresentationLogic {
+	weak var viewController: IToDoListDisplayLogicInput?
 	
 	// MARK: Presentation
 	
