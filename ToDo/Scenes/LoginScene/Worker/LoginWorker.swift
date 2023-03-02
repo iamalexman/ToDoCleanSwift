@@ -16,7 +16,7 @@ public struct LoginDTO {
 final class LoginWorker: ILoginWorker {
 	
 	func login(login: String, password: String) -> LoginDTO {
-		if login == "123" && password == "123" {
+		if login == "admin" && password == "pa$$32!" {
 			return LoginDTO(
 				success: true,
 				login: login,
